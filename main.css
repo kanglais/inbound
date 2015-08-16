@@ -1,0 +1,62 @@
+body {
+	margin: 0 auto;
+	background: #fff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+	color: #343434;
+	font-weight: 200;
+}
+header .site {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px 0 20px;
+	display: inline-block;
+}
+header .site .title {
+	display: block;
+	position: relative;
+	height: 60px;
+	width: 120px;
+	background-color: #e04526;
+	font-family: "league-gothic", "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 3.1em;
+	text-align: center;
+	margin: 20px auto;
+}
+header .site .title a {
+	color: #FFF;
+	font-size: 33px;
+	font-family: "league-gothic", "Helvetica Neue", Helvetica, sans-serif;
+}
+header .pure-u-8-24 {
+	text-align: right;
+}
+header .site .links {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+}
+a {
+	color: #e04526;
+	text-decoration: none;
+	font-weight: 400;
+	outline: 0;
+}
+.page-intro {
+	height: 300px;
+	display: block;
+}
+.page-intro .overlay {
+	background-color: #e04526;
+	position: absolute;
+	height: 300px;
+}
+.page-intro .wrap {
+	height: 100%;
+}
+.page-content {
+	text-align: center;
+}
