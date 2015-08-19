@@ -1,3 +1,6 @@
+html, button, input, select, textarea, .pure-g [class*="pure-u"] {
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+}
 body {
 	margin: 0 auto;
 	background: #fff;
@@ -5,11 +8,20 @@ body {
 	color: #343434;
 	font-weight: 200;
 }
-header .site {
+.wrap, header .site {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 20px 0 20px;
-	display: inline-block;
+}
+header .site {
+	height: 180px;
+}
+.pure-g {
+	letter-spacing: -.31em;
+	text-rendering: optimizespeed;
+	font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
 }
 header .site .title {
 	display: block;
@@ -27,6 +39,12 @@ header .site .title a {
 	font-size: 33px;
 	font-family: "league-gothic", "Helvetica Neue", Helvetica, sans-serif;
 }
+a {
+	color: #e04526;
+	text-decoration: none;
+	font-weight: 400;
+	outline: 0 !important; 
+}
 header .pure-u-8-24 {
 	text-align: right;
 }
@@ -39,24 +57,94 @@ header .site .links {
 	text-align: right;
 	margin-top: 20px;
 }
-a {
-	color: #e04526;
-	text-decoration: none;
+header .site .links ul {
+	list-style: none;
+	display: inline-block;
+	width: auto;
+	padding: 0;
+	z-index;
+	margin: 10px 0 0 0;
+}
+header .site .links ul li {
+	margin-right: 25px;
+	float: left;
+}
+@media screen and (min-width: 48em)
+header .site .links ul li a {
+	font-size: 1.15em;
+}
+header .site .links ul li a {
+	color: #444;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
 	font-weight: 400;
-	outline: 0;
+	font-size: .75em;
+	text-transform: uppercase;
+	letter-spacing: .015em;
+}
+header .site .links ul li:last-child {
+	margin-right: 0;
 }
 .page-intro {
-	height: 300px;
-	display: block;
+	height: 380px;
+}
+.page-intro.inbound-customer .overlay {
+	background-color: #e04526;
 }
 .page-intro .overlay {
-	background-color: #e04526;
 	position: absolute;
-	height: 300px;
+	width: 100%;
+	height: 380px;
 }
 .page-intro .wrap {
 	height: 100%;
 }
+@media screen and (min-width: 64em) {
+	.wrap, header .site {
+		padding: 0;
+	}
+}
+.wrap, header .site {
+	max-width: 960px;
+	margin: 0, auto;
+	padding: 0 20px 0 20px;
+}
+@media screen and (min-width: 64em) {
+	.page-intro .intro-content {
+		font-size: 3.1em;
+	}
+}
+.page-intro .intro-content {
+	position: relative;
+	top: 33%;
+	font-family: "omnes-pro", "Helvetica Neue", Helvetica, sans-serif;
+	line-height: 1.2em;
+	font-weight: 100;
+	color: #EDF8FF;
+	font-size: 45px;
+}
+@media screen and (min-width: 64em) {
+	.page-intro .intro-content-small {
+		font-size: .5em;
+		line-height: 1.15em;
+	} 
+}
+.page-intro .intro-content-small {
+	margin-top: 25px;
+	font-size: .5em;
+	color: #FFF;
+	line-height: 1.25em;
+}
+.inbound-wrapper {
+	padding-top: 30px;
+	padding-bottom: 125px;
+}
+.inbound-wrapper .statement.gray {
+	color: #777;
+}
 .page-content {
 	text-align: center;
+}
+.pure-form-stacked input[type=text], .pure-form-stacked input[type=email], .pure-form-stacked textarea {
+	display: block;
+	margin: .25em auto;
 }
